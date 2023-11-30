@@ -24,7 +24,7 @@ class ProductFacade extends Facade
         $chunks = array_chunk(iterator_to_array($records), 100);
 
         foreach ($chunks as $chunk) {
-            BatchImportProductsJob::dispatch($chunk)->onQueue('import_products');
+            BatchImportProductsJob::dispatch($chunk);
         }
     }
 }

@@ -1,7 +1,9 @@
 ## How to run this task
 
-- Create a database named: apimio_task
-- 
+- Create a database
+- Arrange CSV file header in this format: ['Title', 'Description', 'Price', 'SKU', 'Type', 'Published']
+- Add Mail constants to .env file.
+- Also, add: MAIL_FROM_ADDRESS, MAIL_TO_ADDRESS with releted email to env file.
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
