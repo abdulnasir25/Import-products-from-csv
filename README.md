@@ -1,9 +1,24 @@
-## How to run this task
+## Steps to follow to run this project
 
-- Create a database
-- Arrange CSV file header in this format: ['Title', 'Description', 'Price', 'SKU', 'Type', 'Published']
-- Add Mail constants to .env file.
-- Also, add: MAIL_FROM_ADDRESS, MAIL_TO_ADDRESS with releted email to env file.
+- Download the zip
+- Extract the file in your specified folder
+- Open the project in your code editor
+- Create the .env file by duplicating the .env.example file and rename it to .env
+- Create a database in your localhost/phpmyadmin
+- Update the configuration inside .env file
+- Replace the database name, what you just added in the above step
+- Add password, if you are using for your phpmyadmin, else leave it empty
+- Add Mail constants to .env
+- constants:
+    MAIL_FROM_ADDRESS = 'example@example.com'
+    MAIL_TO_ADDRESS = 'example@example.com'
+- Now run your server using the cmd command: php artisan serve
+- Open up the project in your browser
+- Now, you will see a simple static one field form to upload a CSV file
+- First arrange the CSV file in this format:
+    Header: ['Title', 'Description', 'Price', 'SKU', 'Type', 'Published']
+    Data: Add its relevant values
+- 
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 

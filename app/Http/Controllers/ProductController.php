@@ -9,9 +9,9 @@ use Illuminate\Http\Request;
 class ProductController extends Controller
 {
     public function importProducts(Request $request) {
-        // $request->validate([
-        //     'csv_file' => 'required|mimes:csv'
-        // ]);
+        $request->validate([
+            'csv_file' => 'required|mimes:csv'
+        ]);
 
         $csvFilePath = $request->file('csv_file')->storeAs('csv-imports', 'products.csv');
 
