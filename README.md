@@ -8,17 +8,19 @@
 - Update the configuration inside .env file
 - Replace the database name, what you just added in the above step
 - Add password, if you are using for your phpmyadmin, else leave it empty
-- Add Mail constants to .env
-- constants:
+- Add Mail constants to .env:
+    ~~~
     MAIL_FROM_ADDRESS = 'example@example.com'
     MAIL_TO_ADDRESS = 'example@example.com'
+    ~~~
 - Now run your server using the cmd command: php artisan serve
 - Open up the project in your browser
 - Now, you will see a simple static one field form to upload a CSV file
 - First arrange the CSV file in this format:
+    ~~~
     Header: ['Title', 'Description', 'Price', 'SKU', 'Type', 'Published']
     Data: Add its relevant values
-- 
+    ~~~
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
